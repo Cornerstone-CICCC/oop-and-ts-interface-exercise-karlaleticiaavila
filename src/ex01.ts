@@ -2,13 +2,16 @@
 // Define a type and an interface for a "Person" object. The Person should have a name (string) and age (number).
 // Then, create an object of each kind and log them to the console.
 
-type PersonType = {
-
+type PersonType  = {
+    name:string,
+    age:number
 };
 
 interface PersonInterface {
-
+    name: string;
+    age: number;
 }
+
 
 const person1 = { name: "Alice", age: 25 };
 const person2 = { name: "Bob", age: 30 };

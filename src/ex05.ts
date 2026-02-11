@@ -3,7 +3,8 @@
 // Create an object with unknown type, then cast it to the "User" interface and log the email if it exists.
 
 interface User {
-
+  id: number;
+  email?: string;
 }
 
 const unknownUser = {
@@ -11,7 +12,6 @@ const unknownUser = {
   email: "test@example.com"
 };
 
-const user = unknownUser;
-
+const user = unknownUser as User;
 console.log(user.email ?? "Email not available");
 // Expected Output: "test@example.com"
